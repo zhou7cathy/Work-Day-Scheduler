@@ -21,8 +21,22 @@ $(function () {
     //
    
 
+    // TODO: Add code to display the current date in the header of the page
+    var currentDay = dayjs().format('dddd, MMMM D')
+    $('#currentDay').text(currentDay);
   });
 
-   // TODO: Add code to display the current date in the header of the page
-var currentDay = dayjs().format('dddd, MMMM D')
-$('#currentDay').text(currentDay);
+
+// document.querySelector(".saveBtn9").addEventListener("click", function (event){
+//   event.preventDefault(); 
+      
+//   var description9am = document.querySelector(".description9am").value ;
+//   localStorage.setItem("description9am", description9am);
+// });
+
+// function renderTask(){
+//   var task9am = localStorage.getItem("description9am");
+//   document.querySelector(".description9am").value = task9am
+// }
+
+// renderTask();
