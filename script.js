@@ -26,42 +26,13 @@ $(function () {
 
   //Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements.
   function renderDescription(){
-    if(localStorage != null) {
-      $("#hour-9").children()[1].value = localStorage.getItem("hour-9");
-    }
-
-    if(localStorage != null) {
-      $("#hour-10").children()[1].value = localStorage.getItem("hour-10");
-    }
-
-    if(localStorage != null) {
-      $("#hour-11").children()[1].value = localStorage.getItem("hour-11");
-    }
-
-    if(localStorage != null) {
-      $("#hour-12").children()[1].value = localStorage.getItem("hour-12");
-    }
-    
-    if(localStorage != null) {
-      $("#hour-13").children()[1].value = localStorage.getItem("hour-13");
-    }
-      
-    if(localStorage != null) {
-      $("#hour-14").children()[1].value = localStorage.getItem("hour-14");
-    }
-
-    if(localStorage != null) {
-      $("#hour-15").children()[1].value = localStorage.getItem("hour-15");
-    }
-    
-    if(localStorage != null) {
-      $("#hour-16").children()[1].value = localStorage.getItem("hour-16");
-    }
-
-    if(localStorage != null) {
-      $("#hour-17").children()[1].value = localStorage.getItem("hour-17");
+    for(var i = 9; i <= 17; i++){
+      if(localStorage != null) {
+        $('#hour-' + i).children()[1].value = localStorage.getItem('hour-'+ i);
+      }
     }
   }
+  
   renderDescription();
 });
 
